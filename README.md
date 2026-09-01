@@ -37,7 +37,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   Ik ga de website van 'Under Armour' namaken.
+  
   https://www.underarmour.nl/nl-nl/?cid=PS_OMD_NL_34712_N0V53OQB7V_164736217168_21029949825&gclsrc=aw.ds&gad_source=1&gad_campaignid=21029949825&gbraid=0AAAAADm-LWQ7pQE5McazYf7DYNFZxZQcK&gclid=Cj0KCQjw79nUBhCgARIsADSHka1Hi2TzvvJHq7Ii190AEvBaCRzqnb2jN8IqqXw_EKGTcmsvjv6FJtYaAnRCEALw_wcB
+  of de website van kawasaki
+
+  https://www.kawasaki.nl/
   
 
   #### Screenshot(s) van de eerste pagina (small screen): 
