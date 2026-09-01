@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Rafi IJssel
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Rood
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface plane
  
 </details>
 
@@ -36,7 +36,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  Ik ga de website van 'Under Armour' namaken.
+  https://www.underarmour.nl/nl-nl/?cid=PS_OMD_NL_34712_N0V53OQB7V_164736217168_21029949825&gclsrc=aw.ds&gad_source=1&gad_campaignid=21029949825&gbraid=0AAAAADm-LWQ7pQE5McazYf7DYNFZxZQcK&gclid=Cj0KCQjw79nUBhCgARIsADSHka1Hi2TzvvJHq7Ii190AEvBaCRzqnb2jN8IqqXw_EKGTcmsvjv6FJtYaAnRCEALw_wcB
+  
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
