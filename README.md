@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Surface plane
+  Responsive
  
 </details>
 
@@ -36,21 +36,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Ik ga de website van 'Under Armour' namaken.
-  
-  https://www.underarmour.nl/nl-nl/?cid=PS_OMD_NL_34712_N0V53OQB7V_164736217168_21029949825&gclsrc=aw.ds&gad_source=1&gad_campaignid=21029949825&gbraid=0AAAAADm-LWQ7pQE5McazYf7DYNFZxZQcK&gclid=Cj0KCQjw79nUBhCgARIsADSHka1Hi2TzvvJHq7Ii190AEvBaCRzqnb2jN8IqqXw_EKGTcmsvjv6FJtYaAnRCEALw_wcB
-  of de website van kawasaki
-
-  https://www.kawasaki.nl/
+  Ik ga de website van joyridesweets namaken.
   
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img width="1512" height="847" alt="image" src="https://github.com/user-attachments/assets/886516d6-ffb3-41ba-90fc-0bb76bb818b9" />
+
+">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  
  
 </details>
 
