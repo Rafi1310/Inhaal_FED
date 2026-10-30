@@ -10,26 +10,56 @@
 </head>
 <body>
 
-    <!-- 1. MOBILE HEADER -->
+    
     <header class="site-header">
+        <!-- De hamburger knop (is de eerste button direct in de header) -->
         <button aria-label="Open menu">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
+
+        <!-- Desktop navigatie -->
+        <nav>
+            <a href="#">new arrivals</a>
+            <a href="#">shop candy</a>
+            <a href="#">shop merch</a>
+            <a href="#">our story</a>
+        </nav>
 
         <a href="#">
             <img src="images/logo.webp" alt="JOYRIDE">
         </a>
 
-        <button aria-label="Shopping bag">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-        </button>
+        <!-- Het blokje met de twee iconen rechts -->
+        <div>
+            <!-- Account icoon (is de eerste knop in deze div) -->
+            <button aria-label="Account">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </button>
+            <!-- Winkelmand icoon (is de tweede/laatste knop) -->
+            <button aria-label="Shopping bag">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </button>
+        </div>
     </header>
 
     <!-- 2. HERO CAROUSEL -->
     <section class="hero-carousel">
         <div>
-            <img src="images/Hero_img.webp" alt="Joyride Hero 1" class="slide active">
-            <img src="images/hero_img2.webp" alt="Joyride Hero 2" class="slide">
+            <div class="slide active">
+                <picture>
+                    <!-- Dit plaatje laadt hij alleen op desktop (minimaal 1024px breed) -->
+                    <source media="(min-width: 1024px)" srcset="images/hero_groot.webp">
+                    <!-- Dit is het normale (mobiele) plaatje -->
+                    <img src="images/Hero_img.webp" alt="Joyride Hero 1">
+                </picture>
+            </div>
+            
+            <div class="slide">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/herogroot_2.webp">
+                    <img src="images/hero_img2.webp" alt="Joyride Hero 2">
+                </picture>
+            </div>
 
             <button>❮</button>
             <button>❯</button>
@@ -94,10 +124,35 @@
         <h2>Don't just take our word<br>for it</h2>
 
         <div>
-            <span>★★★★★</span>
-            <h3>Mom & kid approved</h3>
-            <p>We love everything about them. They are super yummy and the fact that they have no artificial colors or any of the other junk is the biggest plus.</p>
-            <strong>Kara A.</strong>
+            <!-- Vorige knop -->
+            <button>❮</button>
+
+            <!-- Review 1 (active = standaard zichtbaar) -->
+            <div class="slide active">
+                <span>★★★★★</span>
+                <h3>Try them</h3>
+                <p>Have you tried them they are great if not TRY THEM</p>
+                <strong>@jadethefennecfox</strong>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="slide">
+                <span>★★★★★</span>
+                <h3>Roadtrip must have</h3>
+                <p>🍭ROAD TRIP HAPPY SUGAR ATTACK SNACK !!!</p>
+                <strong>@realdealdenise</strong>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="slide">
+                <span>★★★★★</span>
+                <h3>My favorite candy</h3>
+                <p>Perfect texture and they're actually sour unlike other healthier sour candies. Way to go Ryan and the rest of the Joyride team!</p>
+                <strong>Shane H.</strong>
+            </div>
+
+            <!-- Volgende knop -->
+            <button>❯</button>
         </div>
     </section>
 

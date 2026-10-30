@@ -96,6 +96,16 @@ h1, h2, h3, h4 {
     display: block;
 }
 
+
+.site-header nav, 
+.site-header > div > button:first-of-type { 
+    display: none; 
+}
+.site-header > div { 
+    display: flex; 
+    gap: 10px; 
+}
+
 /* ==========================================
    2. HERO CAROUSEL
    ========================================== */
@@ -108,6 +118,13 @@ h1, h2, h3, h4 {
     position: relative;
     width: 100%;
     overflow: hidden;
+}
+
+/* Zorgt ervoor dat de hero-afbeelding nooit breder wordt dan je scherm */
+.hero-carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Basis instellingen voor ALLE slides in alle carrousels */
@@ -228,10 +245,10 @@ h1, h2, h3, h4 {
     height: 260px;
     margin: 0 auto 28px;
     border-radius: 16px;
-    border: 3px solid var(--purple);
-    box-shadow: -10px 10px 0px var(--purple);
+    /* border: 3px solid var(--purple);
+    box-shadow: -10px 10px 0px var(--purple); */
     transform: rotate(1.5deg);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .dream-section img {
@@ -264,13 +281,33 @@ h1, h2, h3, h4 {
     padding: 20px 20px 30px;
 }
 
+/* De carrousel opmaak voor de reviews */
 .reviews-section > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+/* De pijltjes in de magenta sectie moeten wit zijn */
+.reviews-section button {
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+/* Het review-kaartje zelf (de slide) */
+.reviews-section > div > div {
     background-color: var(--purple);
     color: var(--white);
     text-align: left;
     padding: 26px 22px;
     border-radius: 18px;
-    max-width: 330px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -394,20 +431,143 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================
-   DESKTOP / TABLET UITBREIDING (Mobile-First!)
+   DESKTOP UITBREIDING (Vanaf 1024 pixels breed)
    ========================================== */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+    /* 1. Header */
+    .site-header { padding: 20px 5%; }
+    
+    /* Verberg hamburger knop */
+    .site-header > button { display: none; } 
+    
+    /* Toon navigatie */
+    .site-header nav { display: flex; gap: 30px; }
+    .site-header nav a {
+        text-decoration: none;
+        color: var(--purple);
+        font-weight: 700;
+        font-size: 0.95rem;
+    }
+    
+    /* Toon account knop */
+    .site-header > div > button:first-of-type { display: block; }
+
+    /* 3. Producten & 7. Merch (Alle slides naast elkaar) */
     .product-section > div, 
     .merch-section > div {
-        max-width: 550px;
+        max-width: 1200px;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .product-section .slide, 
+    .merch-section .slide {
+        display: block !important;
+        flex: 1;
     }
 
-    .dream-section > p {
-        max-width: 520px;
-        font-size: 1rem;
+    /* Pijltjes verbergen */
+    .product-section button, 
+    .merch-section button {
+        display: none;
     }
 
+    /* 5. Ryan Trahan (Foto links, tekst rechts) */
+    .dream-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: left;
+        padding: 80px 24px;
+    }
+    .dream-section .frame {
+        margin: 0;
+        width: 320px;
+        height: 380px;
+    }
+    .dream-section > div:last-child { max-width: 450px; }
+    .dream-section > p { margin: 0 0 30px 0; }
+
+    /* 6. Reviews */
     .reviews-section > div {
-        max-width: 480px;
+        max-width: 1100px;
+        gap: 24px;
+        justify-content: center;
+    }
+    
+    .reviews-section .slide {
+        display: block !important;
+        flex: 1;
+    }
+    
+    .reviews-section button {
+        display: none;
+    }
+
+    /* 8. Footer (In kolommen naast elkaar) */
+    /* 8. Footer Desktop (Achtergrond 100%, content gecentreerd) */
+    .site-footer {
+        /* Geen max-width meer hier, zodat de paarse kleur volledig naar de randen gaat */
+        text-align: left;
+        padding-bottom: 20px;
+        padding-top: 40px;
+        /* Een beetje padding aan de zijkanten voor als het scherm net iets kleiner is dan 1200px */
+        padding-left: 5%; 
+        padding-right: 5%;
+    }
+    
+    /* Het binnenste blok (waar de inhoud in zit) krijgt nu de max-width */
+    .site-footer > div:first-of-type {
+        max-width: 1200px;
+        margin: 0 auto; /* Centreert de content */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .site-footer h3 {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 20px;
+    }
+
+    .site-footer form {
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 450px;
+    }
+
+    .site-footer ul {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        justify-self: end;
+        padding-right: 50px;
+    }
+
+    .site-footer form input {
+        display: inline-block;
+        width: 60%;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    .site-footer form button {
+        display: inline-block;
+        width: 35%;
+        margin: 0;
+    }
+
+    /* Ook de onderste legal-balk krijgt de max-width zodat hij uitlijnt met de rest */
+    .site-footer .legal {
+        max-width: 1200px;
+        margin: 50px auto 0; /* Auto margin centreert het blok */
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
     }
 }

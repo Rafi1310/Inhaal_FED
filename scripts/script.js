@@ -66,3 +66,28 @@ function moveMerch(direction) {
 
 merchButtons[0].addEventListener('click', function() { moveMerch(-1); });
 merchButtons[1].addEventListener('click', function() { moveMerch(1); });
+
+// ==========================================
+// 4. REVIEWS CAROUSEL
+// ==========================================
+let currentReviewIndex = 0;
+const reviewSlides = document.querySelectorAll('.reviews-section .slide');
+
+// Zoek alle knoppen in de reviews-sectie
+const reviewButtons = document.querySelectorAll('.reviews-section button');
+
+function moveReview(direction) {
+    reviewSlides[currentReviewIndex].classList.remove('active');
+    currentReviewIndex = currentReviewIndex + direction;
+    
+    if (currentReviewIndex >= reviewSlides.length) currentReviewIndex = 0;
+    else if (currentReviewIndex < 0) currentReviewIndex = reviewSlides.length - 1;
+    
+    reviewSlides[currentReviewIndex].classList.add('active');
+}
+
+// reviewButtons[0] is vorige, reviewButtons[1] is volgende
+if(reviewButtons.length > 0) {
+    reviewButtons[0].addEventListener('click', function() { moveReview(-1); });
+    reviewButtons[1].addEventListener('click', function() { moveReview(1); });
+}
