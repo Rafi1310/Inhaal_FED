@@ -1,19 +1,19 @@
 /* ==========================================
-   VARIABELEN (Exacte kleuren uit screenshot)
+   VARIABELEN
    ========================================== */
 :root {
-    --purple: #3B0B59;       /* De dieppaarse hoofdkleur */
-    --hero-blue: #6AD1F7;    /* Helderblauw van de bovenste sectie */
-    --lime-green: #8CD600;   /* Felgroene balk */
-    --magenta: #D63884;      /* Roze/magenta review sectie */
-    --orange-wave: #FFA800;  /* Oranje/gele golf boven de footer */
-    --pink-bag: #F48FB1;     /* Roze snoepzakje */
-    --hoodie-red: #EE1C25;   /* Rode hoodie */
+    --purple: #3B0B59;
+    --hero-blue: #6AD1F7;
+    --lime-green: #8CD600;
+    --magenta: #D63884;
+    --orange-wave: #FFA800;
+    --pink-bag: #F48FB1;
+    --hoodie-red: #EE1C25;
     --white: #FFFFFF;
 }
 
 /* ==========================================
-   BASIS & RESET (MOBILE FIRST: 375px basis)
+   BASIS & RESET
    ========================================== */
 * {
     margin: 0;
@@ -29,11 +29,15 @@ body {
     text-align: center;
 }
 
-h1, h2, h3, .logo, .footer-logo {
+h1, h2, h3, h4 {
     font-family: 'Fredoka', sans-serif;
 }
 
-.section-title {
+/* Standaard opmaak voor alle sectie-titels */
+.product-section h2, 
+.dream-section h2, 
+.reviews-section h2, 
+.merch-section h2 {
     font-size: 1.65rem;
     line-height: 1.15;
     font-weight: 800;
@@ -41,11 +45,12 @@ h1, h2, h3, .logo, .footer-logo {
     margin-bottom: 24px;
 }
 
-.white-title {
+/* De review titel is wit */
+.reviews-section h2 {
     color: var(--white);
 }
 
-/* Paarse knoppen met witte rand + harde schaduw */
+/* Paarse knoppen (Find us in store / Learn more) */
 .btn-purple {
     display: inline-block;
     background-color: var(--purple);
@@ -65,7 +70,7 @@ h1, h2, h3, .logo, .footer-logo {
 /* ==========================================
    1. HEADER
    ========================================== */
-.header {
+.site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +81,7 @@ h1, h2, h3, .logo, .footer-logo {
     z-index: 100;
 }
 
-.icon-btn {
+.site-header button {
     background: none;
     border: none;
     color: var(--purple);
@@ -85,13 +90,8 @@ h1, h2, h3, .logo, .footer-logo {
     align-items: center;
 }
 
-.logo {
-    display: inline-block;
-    text-decoration: none;
-}
-
-.logo-img {
-    height: 32px; /* Pas dit getal aan om het logo groter of kleiner te maken */
+.site-header img {
+    height: 32px; 
     width: auto;
     display: block;
 }
@@ -99,33 +99,34 @@ h1, h2, h3, .logo, .footer-logo {
 /* ==========================================
    2. HERO CAROUSEL
    ========================================== */
-.hero-carousel-section {
+.hero-carousel {
     width: 100%;
     background-color: var(--hero-blue);
 }
 
-.hero-carousel-container {
+.hero-carousel > div {
     position: relative;
     width: 100%;
-    overflow: hidden; /* Zorgt dat er niks buiten het blok valt */
+    overflow: hidden;
 }
 
-.hero-slide {
+/* Basis instellingen voor ALLE slides in alle carrousels */
+.slide {
+    display: none;
     width: 100%;
     height: auto;
-    display: none; /* Standaard verbergen we de afbeeldingen */
 }
 
-.hero-slide.active {
-    display: block; /* Alleen de afbeelding met de 'active' class wordt getoond */
+.slide.active {
+    display: block;
 }
 
-/* Knoppen opmaken en positioneren */
-.hero-arrow {
+/* Pijltjes voor de Hero Carousel */
+.hero-carousel button {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); /* Zet ze exact in het verticale midden */
-    background: rgba(255, 255, 255, 0.8); /* Licht transparante witte achtergrond */
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
     color: var(--purple);
     border: none;
     border-radius: 50%;
@@ -139,17 +140,17 @@ h1, h2, h3, .logo, .footer-logo {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.prev-arrow { left: 10px; }
-.next-arrow { right: 10px; }
+.hero-carousel .prev { left: 10px; }
+.hero-carousel .next { right: 10px; }
 
 /* ==========================================
-   3. PRODUCT SLIDER SECTION
+   3. PRODUCT SLIDER & 7. MERCH SLIDER
    ========================================== */
-.product-section {
+.product-section, .merch-section {
     padding: 45px 16px 35px;
 }
 
-.carousel {
+.product-section > div, .merch-section > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -157,45 +158,30 @@ h1, h2, h3, .logo, .footer-logo {
     margin: 0 auto;
 }
 
-.carousel-arrow {
+/* Tekstpijltjes voor producten en merch */
+.product-section button, .merch-section button {
     background: none;
     border: none;
     color: var(--purple);
     cursor: pointer;
     padding: 8px;
+    font-size: 1.5rem;
 }
 
-.candy-bag-mockup {
-    width: 145px;
-    height: 195px;
-    background: linear-gradient(145deg, #FF94B8, #F06292);
-    border-radius: 14px;
+/* Product slide inhoud */
+.product-section .slide, .merch-section .slide {
+    text-align: center;
+}
+
+.product-section img {
+    width: 145px; 
+    height: auto;
     margin: 0 auto 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--white);
-    box-shadow: 0 10px 20px rgba(59, 11, 89, 0.15);
-    padding: 12px;
+    display: block;
+    filter: drop-shadow(0 10px 15px rgba(59, 11, 89, 0.15));
 }
 
-.bag-logo {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 1.3rem;
-    -webkit-text-stroke: 1px var(--purple);
-    margin-bottom: 8px;
-}
-
-.bag-flavor {
-    font-size: 0.75rem;
-    font-weight: 800;
-    background: rgba(255,255,255,0.25);
-    padding: 4px 8px;
-    border-radius: 6px;
-}
-
-.product-name {
+.product-section p, .merch-section p {
     font-weight: 800;
     font-size: 0.9rem;
     line-height: 1.2;
@@ -210,7 +196,7 @@ h1, h2, h3, .logo, .footer-logo {
     padding: 26px 16px 32px;
 }
 
-.store-logos {
+.store-banner div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,7 +208,7 @@ h1, h2, h3, .logo, .footer-logo {
     margin-bottom: 18px;
 }
 
-.store-logos .acme {
+.store-banner .acme {
     font-style: italic;
     letter-spacing: 1px;
 }
@@ -234,21 +220,24 @@ h1, h2, h3, .logo, .footer-logo {
     padding: 45px 24px 50px;
 }
 
-.ryan-frame {
+.dream-section .frame {
     width: 230px;
     height: 260px;
     margin: 0 auto 28px;
     border-radius: 16px;
+    border: 3px solid var(--purple);
+    box-shadow: -10px 10px 0px var(--purple);
+    transform: rotate(1.5deg);
     overflow: hidden;
 }
 
-.ryan-img {
+.dream-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.dream-text {
+.dream-section > p {
     font-size: 0.88rem;
     line-height: 1.6;
     font-weight: 600;
@@ -260,8 +249,8 @@ h1, h2, h3, .logo, .footer-logo {
 /* ==========================================
    6. MAGENTA REVIEWS MET GOLVEN
    ========================================== */
-.wave-top-pink svg,
-.wave-bottom-pink svg {
+.wave-top svg,
+.wave-bottom svg {
     display: block;
     width: 100%;
     height: 28px;
@@ -272,7 +261,7 @@ h1, h2, h3, .logo, .footer-logo {
     padding: 20px 20px 30px;
 }
 
-.review-card {
+.reviews-section > div {
     background-color: var(--purple);
     color: var(--white);
     text-align: left;
@@ -282,61 +271,40 @@ h1, h2, h3, .logo, .footer-logo {
     margin: 0 auto;
 }
 
-.stars {
+.reviews-section span {
+    display: block;
     color: #FFB800;
     font-size: 1rem;
     letter-spacing: 2px;
     margin-bottom: 8px;
 }
 
-.review-card h3 {
+.reviews-section h3 {
     font-size: 1.05rem;
     margin-bottom: 12px;
 }
 
-.review-card p {
+.reviews-section p {
     font-size: 0.85rem;
     line-height: 1.55;
     margin-bottom: 18px;
     opacity: 0.92;
 }
 
-.reviewer-name {
+.reviews-section strong {
     font-size: 0.8rem;
     font-weight: 700;
 }
 
 /* ==========================================
-   7. MERCH SECTION ("Grab some JOYRIDE merch")
+   7. MERCH SECTION 
    ========================================== */
-.merch-section {
-    padding: 40px 16px 50px;
-}
-
-.light-arrow {
-    opacity: 0.25;
-}
-
-.hoodie-mockup {
-    width: 180px;
-    height: 165px;
-    background-color: var(--hoodie-red);
-    border-radius: 28px 28px 12px 12px;
+.merch-section img {
+    width: 180px; /* Pas dit aan om de merch groter of kleiner te maken */
+    height: auto;
     margin: 0 auto 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-size: 0.7rem;
-    padding: 15px;
-    box-shadow: 0 8px 16px rgba(238, 28, 37, 0.25);
-}
-
-.hoodie-mockup strong {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 1.1rem;
     display: block;
-    margin-top: 2px;
+    filter: drop-shadow(0 10px 15px rgba(59, 11, 89, 0.15)); /* Zachte schaduw */
 }
 
 /* ==========================================
@@ -348,62 +316,61 @@ h1, h2, h3, .logo, .footer-logo {
     height: 45px;
 }
 
-.footer {
+.site-footer {
     background-color: var(--purple);
     color: var(--white);
     padding: 30px 24px 35px;
 }
 
-.footer-logo {
+.site-footer h3 {
     font-size: 2rem;
     color: #F48FB1;
     margin-bottom: 20px;
 }
 
-.footer-nav {
+.site-footer ul {
     list-style: none;
     margin-bottom: 35px;
 }
 
-.footer-nav li {
+.site-footer ul li {
     margin-bottom: 10px;
 }
 
-.footer-nav a {
+.site-footer ul a {
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
     font-size: 0.95rem;
 }
 
-.newsletter-box h3 {
+.site-footer form h4 {
     font-size: 1.3rem;
     margin-bottom: 8px;
 }
 
-.newsletter-box p {
+.site-footer form p {
     font-size: 0.8rem;
     opacity: 0.85;
     margin-bottom: 16px;
     line-height: 1.4;
 }
 
-.newsletter-input {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.site-footer input {
+    width: 100%;
     max-width: 300px;
-    margin: 0 auto 40px;
-}
-
-.newsletter-input input {
     padding: 12px 16px;
     border-radius: 99px;
     border: none;
     font-size: 0.85rem;
+    margin-bottom: 10px;
 }
 
-.newsletter-input button {
+.site-footer button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
     background-color: var(--magenta);
     color: var(--white);
     border: none;
@@ -414,37 +381,30 @@ h1, h2, h3, .logo, .footer-logo {
     cursor: pointer;
 }
 
-.footer-legal {
+.site-footer .legal {
     font-size: 0.65rem;
     opacity: 0.7;
     line-height: 1.6;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     padding-top: 20px;
+    margin-top: 40px;
 }
 
 /* ==========================================
    DESKTOP / TABLET UITBREIDING (Mobile-First!)
    ========================================== */
 @media (min-width: 768px) {
-    .hero-title {
-        font-size: 3.4rem;
-    }
-
-    .pack-card {
-        width: 150px;
-        height: 195px;
-    }
-
-    .carousel {
+    .product-section > div, 
+    .merch-section > div {
         max-width: 550px;
     }
 
-    .dream-text {
+    .dream-section > p {
         max-width: 520px;
         font-size: 1rem;
     }
 
-    .review-card {
+    .reviews-section > div {
         max-width: 480px;
     }
 }

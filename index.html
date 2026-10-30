@@ -11,143 +11,130 @@
 <body>
 
     <!-- 1. MOBILE HEADER -->
-    <header class="header">
-        <button class="icon-btn" aria-label="Open menu">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
+    <header class="site-header">
+        <button aria-label="Open menu">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
 
-        <!-- De logo link met een afbeelding erin -->
-<a href="#" class="logo">
-    <img src="images/logo.webp" alt="JOYRIDE" class="logo-img">
-</a>
+        <a href="#">
+            <img src="images/logo.webp" alt="JOYRIDE">
+        </a>
 
-        <button class="icon-btn" aria-label="Shopping bag">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <path d="M16 10a4 4 0 0 1-8 0"></path>
-            </svg>
+        <button aria-label="Shopping bag">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
         </button>
     </header>
 
-    <!-- 2. HERO CAROUSEL (Afbeeldingen) -->
-<section class="hero-carousel-section">
-    <div class="hero-carousel-container">
-        <!-- Afbeelding 1 (heeft de class 'active' en is dus als eerste zichtbaar) -->
-        <img src="images/Hero_img.webp" alt="Joyride Hero 1" class="hero-slide active">
-        
-        <!-- Afbeelding 2 -->
-        <img src="images/hero_img2.webp" alt="Joyride Hero 2" class="hero-slide">
+    <!-- 2. HERO CAROUSEL -->
+    <section class="hero-carousel">
+        <div>
+            <img src="images/Hero_img.webp" alt="Joyride Hero 1" class="slide active">
+            <img src="images/hero_img2.webp" alt="Joyride Hero 2" class="slide">
 
-        <!-- Pijltjes om te klikken -->
-        <button class="hero-arrow prev-arrow" onclick="moveHero(-1)">❮</button>
-        <button class="hero-arrow next-arrow" onclick="moveHero(1)">❯</button>
-    </div>
-</section>
+            <button class="prev" onclick="moveHero(-1)">❮</button>
+            <button class="next" onclick="moveHero(1)">❯</button>
+        </div>
+    </section>
 
-    <!-- 3. PRODUCT CAROUSEL ("Shop the best candy on earth") -->
+    <!-- 3. PRODUCT CAROUSEL -->
     <section class="product-section">
-        <h2 class="section-title">Shop the best candy<br>on earth</h2>
+        <h2>Shop the best candy<br>on earth</h2>
 
-        <div class="carousel">
-            <button class="carousel-arrow" aria-label="Previous">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </button>
+        <div>
+            <button onclick="moveProduct(-1)">❮</button>
 
-            <div class="product-slide">
-                <!-- Vervang deze div met <img src="sour-strawberry-strips.png" alt="sour strawberry strips"> -->
-                <div class="candy-bag-mockup">
-                    <span class="bag-logo">JOYRIDE</span>
-                    <span class="bag-flavor">Sour Strawberry<br>Strips</span>
-                </div>
-                <p class="product-name">sour strawberry<br>strips</p>
+            <div class="slide active">
+                <img src="images/CherryBerry.webp" alt="Cherry berry ropes">
+                <p>Cherry berry ropes<br>strips</p>
             </div>
 
-            <button class="carousel-arrow" aria-label="Next">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
+            <div class="slide">
+                <img src="images/Watermelon.webp" alt="Sour watermelon wedges">
+                <p>Sour watermelon wedges<br>strips</p>
+            </div>
+
+            <div class="slide">
+                <img src="images/SourStrips.webp" alt="Sour blue raspberry strips">
+                <p>Sour blue raspberry strips<br>bears</p>
+            </div>
+
+            <button onclick="moveProduct(1)">❯</button>
         </div>
     </section>
 
     <!-- 4. LIME GREEN STORE BANNER -->
     <section class="store-banner">
-        <div class="store-logos">
+        <div>
             <span>HyVee</span>
             <span class="acme">ACME</span>
         </div>
         <a href="#" class="btn-purple">FIND US IN STORE</a>
     </section>
 
-    <!-- 5. RYAN TRAHAN SECTION ("My crazy dream") -->
+    <!-- 5. RYAN TRAHAN SECTION -->
     <section class="dream-section">
-        <div class="ryan-frame">
-            <!-- Plaats hier de foto van Ryan met de zure matten bij zijn ogen -->
-            <img src="images/ryan.webp" alt="Ryan Trahan holding candy" class="ryan-img">
+        <div class="frame">
+            <img src="images/ryan.webp" alt="Ryan Trahan holding candy">
         </div>
 
-        <h2 class="section-title">My crazy dream</h2>
-
-        <p class="dream-text">
+        <h2>My crazy dream</h2>
+        <p>
             howdy! ryan trahan here. y'all know i love candy, but have you ever looked at what it's really made of? all the top brands are filled with fake dyes, artificial flavors and way too much sugar. it's time something changed. at JOYRIDE, we dream up delicious candy without all the junk. let's change the way the world eats candy.
         </p>
 
         <a href="#" class="btn-purple">LEARN MORE</a>
     </section>
 
-    <!-- 6. MAGENTA REVIEWS SECTION MET GOLVEN -->
-    <div class="wave-top-pink">
-        <svg viewBox="0 0 500 50" preserveAspectRatio="none">
-            <path d="M0,50 L0,25 Q60,0 125,25 T250,25 T375,25 T500,25 L500,50 Z" fill="#D63884"></path>
-        </svg>
+    <!-- 6. MAGENTA REVIEWS SECTION -->
+    <div class="wave-top">
+        <svg viewBox="0 0 500 50" preserveAspectRatio="none"><path d="M0,50 L0,25 Q60,0 125,25 T250,25 T375,25 T500,25 L500,50 Z" fill="#D63884"></path></svg>
     </div>
 
     <section class="reviews-section">
-        <h2 class="section-title white-title">Don't just take our word<br>for it</h2>
+        <h2>Don't just take our word<br>for it</h2>
 
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
+        <div>
+            <span>★★★★★</span>
             <h3>Mom & kid approved</h3>
-            <p>
-                We love everything about them. They are super yummy and the fact that they have no artificial colors or any of the other junk is the biggest plus.
-            </p>
-            <span class="reviewer-name">Kara A.</span>
+            <p>We love everything about them. They are super yummy and the fact that they have no artificial colors or any of the other junk is the biggest plus.</p>
+            <strong>Kara A.</strong>
         </div>
     </section>
 
-    <div class="wave-bottom-pink">
-        <svg viewBox="0 0 500 50" preserveAspectRatio="none">
-            <path d="M0,0 L500,0 L500,25 Q440,50 375,25 T250,25 T125,25 T0,25 Z" fill="#D63884"></path>
-        </svg>
+    <div class="wave-bottom">
+        <svg viewBox="0 0 500 50" preserveAspectRatio="none"><path d="M0,0 L500,0 L500,25 Q440,50 375,25 T250,25 T125,25 T0,25 Z" fill="#D63884"></path></svg>
     </div>
 
-    <!-- 7. MERCH SECTION ("Grab some JOYRIDE merch") -->
+    <!-- 7. MERCH SECTION -->
     <section class="merch-section">
-        <h2 class="section-title">Grab some JOYRIDE<br>merch</h2>
+        <h2>Grab some JOYRIDE<br>merch</h2>
 
-        <div class="carousel">
-            <button class="carousel-arrow light-arrow" aria-label="Previous">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </button>
+        <div>
+            <button onclick="moveMerch(-1)">❮</button>
 
-            <div class="merch-slide">
-                <!-- Vervang deze div met <img src="hoodie.png" alt="Red Joyride Hoodie"> -->
-                <div class="hoodie-mockup">
-                    <span>UNCOMMON CANDY<br><strong>JOYRIDE</strong></span>
-                </div>
-                <p class="product-name">hoodies</p>
+            <!-- Slide 1 (active = standaard zichtbaar) -->
+            <div class="slide active">
+                <img src="images/Trui.webp" alt="Joyride Hoodie">
+                <p>hoodies</p>
             </div>
 
-            <button class="carousel-arrow" aria-label="Next">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="images/shirt.webp" alt="Joyride Tee">
+                <p>tees</p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="images/pet.webp" alt="Joyride Hat">
+                <p>hats</p>
+            </div>
+
+            <button onclick="moveMerch(1)">❯</button>
         </div>
     </section>
 
-    <!-- 8. FOOTER MET ORANJE/GELE GOLF EN PAARSE ACHTERGROND -->
+    <!-- 8. FOOTER -->
     <div class="footer-waves">
         <svg viewBox="0 0 500 70" preserveAspectRatio="none">
             <path d="M0,70 L0,25 Q80,0 165,25 T330,25 T500,20 L500,70 Z" fill="#FFA800"></path>
@@ -155,31 +142,30 @@
         </svg>
     </div>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">JOYRIDE</div>
-            <ul class="footer-nav">
+    <footer class="site-footer">
+        <div>
+            <h3>JOYRIDE</h3>
+            <ul>
                 <li><a href="#">our story</a></li>
                 <li><a href="#">faq</a></li>
                 <li><a href="#">store locator</a></li>
                 <li><a href="#">email us</a></li>
             </ul>
 
-            <div class="newsletter-box">
-                <h3>Join the candy crew!</h3>
+            <form>
+                <h4>Join the candy crew!</h4>
                 <p>Sign-up for the sweetest newsletter yet. We've got exclusive promos and early access to your favorite candies.</p>
-                <div class="newsletter-input">
-                    <input type="email" placeholder="Email">
-                    <button type="button">SIGN ME UP</button>
-                </div>
-            </div>
+                <input type="email" placeholder="Email">
+                <button type="button">SIGN ME UP</button>
+            </form>
         </div>
 
-        <div class="footer-legal">
+        <div class="legal">
             <p>© 2026, JOYRIDE</p>
             <p>Refund policy · Privacy policy · Terms of service · Shipping policy</p>
         </div>
     </footer>
-<script src="scripts/script.js"></script>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
