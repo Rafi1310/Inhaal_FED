@@ -140,8 +140,11 @@ h1, h2, h3, h4 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.hero-carousel .prev { left: 10px; }
-.hero-carousel .next { right: 10px; }
+/* Selecteer de eerste button in de sectie (links) */
+.hero-carousel button:first-of-type { left: 10px; }
+
+/* Selecteer de laatste button in de sectie (rechts) */
+.hero-carousel button:last-of-type { right: 10px; }
 
 /* ==========================================
    3. PRODUCT SLIDER & 7. MERCH SLIDER
