@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Berry Ropes - JOYRIDE</title>
+    <!-- https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon_joyride.webp">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER-->
+    <header>
+        <button aria-label="Open menu">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+
+        <nav>
+            <a href="index.html">new arrivals</a>
+            <a href="index.html">shop candy</a>
+            <a href="index.html">shop merch</a>
+            <a href="index.html">our story</a>
+        </nav>
+
+        <a href="index.html">
+            <img src="images/logo.webp" alt="JOYRIDE">
+        </a>
+
+        <menu>
+            <button aria-label="Account">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </button>
+            <button aria-label="Shopping bag">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </button>
+        </menu>
+    </header>
+
+    <!-- 2. PRODUCT DETAIL SECTIE-->
+    <main>
+        <section>
+            
+            <!--Afbeelding en teller -->
+            <figure>
+                <img src="images/CherryBerry.webp" alt="Cherry Berry Ropes">
+                <figcaption>
+                    <button type="button" aria-label="Previous image">❮</button>
+                    <output>1/5</output>
+                    <button type="button" aria-label="Next image">❯</button>
+                </figcaption>
+            </figure>
+
+            <!--Alle informatie en knoppen -->
+            <article>
+                <h1>cherry berry ropes</h1>
+                <p>$45.00</p>
+                <p>★★★★★ <strong>142 Reviews</strong></p>
+
+                <form>
+                    <!--Size knoppen -->
+                    <fieldset>
+                        <legend>Size</legend>
+                        <button type="button"><s>6</s></button>
+                        <button type="button">10</button>
+                    </fieldset>
+
+                    <!--Aantal (- 1 +) -->
+                    <fieldset>
+                        <button type="button" aria-label="Decrease quantity">−</button>
+                        <output>1</output>
+                        <button type="button" aria-label="Increase quantity">+</button>
+                    </fieldset>
+
+                    <!-- Winkelwagen knop -->
+                    <button type="submit">ADD TO CART</button>
+                </form>
+
+                <!-- Beschrijving -->
+                <p>
+                    JOYRIDE Cherry Berry Ropes are deliciously crafted with a chewy outside and a delightfully soft and sweet center. Each bite explodes with bold cherry-berry flavor that's ridiculously tasty and insanely satisfying, making these ropes a flavor ride your taste buds can't resist.
+                </p>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- 3. FOOTER-->
+    <svg viewBox="0 0 500 70" preserveAspectRatio="none">
+        <path d="M0,70 L0,25 Q80,0 165,25 T330,25 T500,20 L500,70 Z" fill="#FFA800"></path>
+        <path d="M0,70 L0,50 Q125,30 250,50 T500,45 L500,70 Z" fill="#3B0B59"></path>
+    </svg>
+
+    <footer>
+        <section>
+            <h3>JOYRIDE</h3>
+            <ul>
+                <li><a href="#">our story</a></li>
+                <li><a href="#">faq</a></li>
+                <li><a href="#">store locator</a></li>
+                <li><a href="#">email us</a></li>
+            </ul>
+
+            <form>
+                <h4>Join the candy crew!</h4>
+                <p>Sign-up for the sweetest newsletter yet. We've got exclusive promos and early access to your favorite candies.</p>
+                <input type="email" placeholder="Email">
+                <button type="button">SIGN ME UP</button>
+            </form>
+        </section>
+
+        <small>
+            <p>© 2026, JOYRIDE</p>
+            <p>Refund policy · Privacy policy · Terms of service · Shipping policy</p>
+        </small>
+    </footer>
+
+</body>
+</html>

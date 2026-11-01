@@ -1,20 +1,36 @@
-/* ==========================================
+/* ==============
+   VARIABLE FONTS
+   ============== */
+@font-face {
+    font-family: 'Fredoka';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url('../fonts/Fredoka-VariableFont_wdth,wght.woff2') format('woff2'); 
+} 
+/* https://fonts.google.com/specimen/Fredoka */
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 200 800;
+    font-display: swap;
+    src: url('../fonts/PlusJakartaSans-VariableFont_wght.woff2') format('woff2');
+}
+/* https://fonts.google.com/specimen/Plus+Jakarta+Sans?preview.script=Latn */
+
+/* ==========
    VARIABELEN
-   ========================================== */
+   ========== */
 :root {
     --purple: #3B0B59;
     --hero-blue: #6AD1F7;
     --lime-green: #8CD600;
     --magenta: #D63884;
     --orange-wave: #FFA800;
-    --pink-bag: #F48FB1;
-    --hoodie-red: #EE1C25;
     --white: #FFFFFF;
 }
 
-/* ==========================================
-   BASIS & RESET
-   ========================================== */
 * {
     margin: 0;
     padding: 0;
@@ -33,11 +49,7 @@ h1, h2, h3, h4 {
     font-family: 'Fredoka', sans-serif;
 }
 
-/* Standaard opmaak voor alle sectie-titels */
-.product-section h2, 
-.dream-section h2, 
-.reviews-section h2, 
-.merch-section h2 {
+main h2 {
     font-size: 1.65rem;
     line-height: 1.15;
     font-weight: 800;
@@ -45,13 +57,9 @@ h1, h2, h3, h4 {
     margin-bottom: 24px;
 }
 
-/* De review titel is wit */
-.reviews-section h2 {
-    color: var(--white);
-}
-
-/* Paarse knoppen (Find us in store / Learn more) */
-.btn-purple {
+/* Paarse knoppen in Sectie 3 en Sectie 4 */
+main > section:nth-of-type(3) a,
+main > section:nth-of-type(4) a {
     display: inline-block;
     background-color: var(--purple);
     color: var(--white);
@@ -67,10 +75,10 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
 }
 
-/* ==========================================
+/* ==========
    1. HEADER
-   ========================================== */
-.site-header {
+   ========== */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +89,7 @@ h1, h2, h3, h4 {
     z-index: 100;
 }
 
-.site-header button {
+header button {
     background: none;
     border: none;
     color: var(--purple);
@@ -90,56 +98,53 @@ h1, h2, h3, h4 {
     align-items: center;
 }
 
-.site-header img {
+header img {
     height: 32px; 
     width: auto;
     display: block;
 }
 
-
-.site-header nav, 
-.site-header > div > button:first-of-type { 
+header nav, 
+header menu button:first-of-type { 
     display: none; 
 }
-.site-header > div { 
+
+header menu { 
     display: flex; 
     gap: 10px; 
+    list-style: none;
 }
 
-/* ==========================================
-   2. HERO CAROUSEL
-   ========================================== */
-.hero-carousel {
+/* =======================
+   SECTIE 1: HERO CAROUSEL
+   ======================= */
+main > section:nth-of-type(1):not(:only-of-type) {
     width: 100%;
     background-color: var(--hero-blue);
 }
 
-.hero-carousel > div {
+main > section:nth-of-type(1):not(:only-of-type) figure {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
-/* Zorgt ervoor dat de hero-afbeelding nooit breder wordt dan je scherm */
-.hero-carousel img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Basis instellingen voor ALLE slides in alle carrousels */
-.slide {
+main > section:nth-of-type(1):not(:only-of-type) picture {
     display: none;
     width: 100%;
-    height: auto;
 }
 
-.slide.active {
+main > section:nth-of-type(1):not(:only-of-type) picture.active {
     display: block;
 }
 
-/* Pijltjes voor de Hero Carousel */
-.hero-carousel button {
+main > section:nth-of-type(1):not(:only-of-type) img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main > section:nth-of-type(1):not(:only-of-type) button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -157,20 +162,19 @@ h1, h2, h3, h4 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Selecteer de eerste button in de sectie (links) */
-.hero-carousel button:first-of-type { left: 10px; }
-
-/* Selecteer de laatste button in de sectie (rechts) */
-.hero-carousel button:last-of-type { right: 10px; }
+main > section:nth-of-type(1):not(:only-of-type) button:first-of-type { left: 10px; }
+main > section:nth-of-type(1):not(:only-of-type) button:last-of-type { right: 10px; }
 
 /* ==========================================
-   3. PRODUCT SLIDER & 7. MERCH SLIDER
+   SECTIE 2 (PRODUCTEN) & SECTIE 6 (MERCH)
    ========================================== */
-.product-section, .merch-section {
+main > section:nth-of-type(2), 
+main > section:nth-of-type(6) {
     padding: 45px 16px 35px;
 }
 
-.product-section > div, .merch-section > div {
+main > section:nth-of-type(2) figure, 
+main > section:nth-of-type(6) figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -178,8 +182,8 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
-/* Tekstpijltjes voor producten en merch */
-.product-section button, .merch-section button {
+main > section:nth-of-type(2) button, 
+main > section:nth-of-type(6) button {
     background: none;
     border: none;
     color: var(--purple);
@@ -188,12 +192,25 @@ h1, h2, h3, h4 {
     font-size: 1.5rem;
 }
 
-/* Product slide inhoud */
-.product-section .slide, .merch-section .slide {
-    text-align: center;
+/* Verberg inactieve slides voor Producten, Reviews en Merch */
+main > section:nth-of-type(2) article,
+main > section:nth-of-type(5) article,
+main > section:nth-of-type(6) article {
+    display: none;
+    width: 100%;
 }
 
-.product-section img {
+main > section:nth-of-type(2) article.active,
+main > section:nth-of-type(5) article.active,
+main > section:nth-of-type(6) article.active {
+    display: block;
+}
+
+main > section:nth-of-type(2) a {
+    text-decoration: none;
+}
+
+main > section:nth-of-type(2) img {
     width: 145px; 
     height: auto;
     margin: 0 auto 14px;
@@ -201,7 +218,16 @@ h1, h2, h3, h4 {
     filter: drop-shadow(0 10px 15px rgba(59, 11, 89, 0.15));
 }
 
-.product-section p, .merch-section p {
+main > section:nth-of-type(6) img {
+    width: 180px;
+    height: auto;
+    margin: 0 auto 14px;
+    display: block;
+    filter: drop-shadow(0 10px 15px rgba(59, 11, 89, 0.15));
+}
+
+main > section:nth-of-type(2) p, 
+main > section:nth-of-type(6) p {
     font-weight: 800;
     font-size: 0.9rem;
     line-height: 1.2;
@@ -209,14 +235,15 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================
-   4. LIME GREEN STORE BANNER
+   SECTIE 3: BANNER
    ========================================== */
-.store-banner {
+main > section:nth-of-type(3) {
     background-color: var(--lime-green);
     padding: 26px 16px 32px;
 }
 
-.store-banner div {
+main > section:nth-of-type(3) ul {
+    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,36 +255,29 @@ h1, h2, h3, h4 {
     margin-bottom: 18px;
 }
 
-.store-banner .acme {
-    font-style: italic;
-    letter-spacing: 1px;
-}
-
-/* ==========================================
-   5. RYAN TRAHAN ("My crazy dream")
-   ========================================== */
-.dream-section {
+/* =====================
+   SECTIE 4: RYAN TRAHAN
+   =====================*/
+main > section:nth-of-type(4) {
     padding: 45px 24px 50px;
 }
 
-.dream-section .frame {
+main > section:nth-of-type(4) figure {
     width: 230px;
     height: 260px;
     margin: 0 auto 28px;
     border-radius: 16px;
-    /* border: 3px solid var(--purple);
-    box-shadow: -10px 10px 0px var(--purple); */
     transform: rotate(1.5deg);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
-.dream-section img {
+main > section:nth-of-type(4) img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.dream-section > p {
+main > section:nth-of-type(4) p {
     font-size: 0.88rem;
     line-height: 1.6;
     font-weight: 600;
@@ -266,23 +286,25 @@ h1, h2, h3, h4 {
     margin: 0 auto 24px;
 }
 
-/* ==========================================
-   6. MAGENTA REVIEWS MET GOLVEN
-   ========================================== */
-.wave-top svg,
-.wave-bottom svg {
+/* =================
+   SECTIE 5: REVIEWS
+   =================*/
+main > svg {
     display: block;
     width: 100%;
     height: 28px;
 }
 
-.reviews-section {
+main > section:nth-of-type(5) {
     background-color: var(--magenta);
     padding: 20px 20px 30px;
 }
 
-/* De carrousel opmaak voor de reviews */
-.reviews-section > div {
+main > section:nth-of-type(5) h2 {
+    color: var(--white);
+}
+
+main > section:nth-of-type(5) figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -290,8 +312,7 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
-/* De pijltjes in de magenta sectie moeten wit zijn */
-.reviews-section button {
+main > section:nth-of-type(5) button {
     background: none;
     border: none;
     color: var(--white);
@@ -300,8 +321,7 @@ h1, h2, h3, h4 {
     font-size: 1.5rem;
 }
 
-/* Het review-kaartje zelf (de slide) */
-.reviews-section > div > div {
+main > section:nth-of-type(5) article {
     background-color: var(--purple);
     color: var(--white);
     text-align: left;
@@ -311,92 +331,82 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
-.reviews-section span {
-    display: block;
+/* Eerste <p> zijn de gele sterren */
+main > section:nth-of-type(5) article p:first-of-type {
     color: #FFB800;
     font-size: 1rem;
     letter-spacing: 2px;
     margin-bottom: 8px;
 }
 
-.reviews-section h3 {
+main > section:nth-of-type(5) article h3 {
     font-size: 1.05rem;
     margin-bottom: 12px;
 }
 
-.reviews-section p {
+/* Tweede <p> is de review tekst */
+main > section:nth-of-type(5) article p:last-of-type {
     font-size: 0.85rem;
     line-height: 1.55;
     margin-bottom: 18px;
     opacity: 0.92;
 }
 
-.reviews-section strong {
+main > section:nth-of-type(5) article strong {
     font-size: 0.8rem;
     font-weight: 700;
 }
 
-/* ==========================================
-   7. MERCH SECTION 
-   ========================================== */
-.merch-section img {
-    width: 180px; /* Pas dit aan om de merch groter of kleiner te maken */
-    height: auto;
-    margin: 0 auto 14px;
-    display: block;
-    filter: drop-shadow(0 10px 15px rgba(59, 11, 89, 0.15)); /* Zachte schaduw */
-}
-
-/* ==========================================
-   8. FOOTER (Oranje golf + Dieppaars)
-   ========================================== */
-.footer-waves svg {
+/* =========
+   7. FOOTER
+   ========= */
+body > svg {
     display: block;
     width: 100%;
     height: 45px;
 }
 
-.site-footer {
+footer {
     background-color: var(--purple);
     color: var(--white);
     padding: 30px 24px 35px;
 }
 
-.site-footer h3 {
+footer h3 {
     font-size: 2rem;
     color: #F48FB1;
     margin-bottom: 20px;
 }
 
-.site-footer ul {
+footer ul {
     list-style: none;
     margin-bottom: 35px;
 }
 
-.site-footer ul li {
+footer ul li {
     margin-bottom: 10px;
 }
 
-.site-footer ul a {
+footer ul a {
     color: var(--white);
     text-decoration: none;
     font-weight: 700;
     font-size: 0.95rem;
 }
 
-.site-footer form h4 {
+footer form h4 {
     font-size: 1.3rem;
     margin-bottom: 8px;
 }
 
-.site-footer form p {
+footer form p {
     font-size: 0.8rem;
     opacity: 0.85;
     margin-bottom: 16px;
     line-height: 1.4;
 }
 
-.site-footer input {
+footer input {
     width: 100%;
     max-width: 300px;
     padding: 12px 16px;
@@ -406,7 +416,7 @@ h1, h2, h3, h4 {
     margin-bottom: 10px;
 }
 
-.site-footer button {
+footer button {
     display: block;
     width: 100%;
     max-width: 300px;
@@ -421,7 +431,8 @@ h1, h2, h3, h4 {
     cursor: pointer;
 }
 
-.site-footer .legal {
+footer small {
+    display: block;
     font-size: 0.65rem;
     opacity: 0.7;
     line-height: 1.6;
@@ -430,51 +441,205 @@ h1, h2, h3, h4 {
     margin-top: 40px;
 }
 
-/* ==========================================
-   DESKTOP UITBREIDING (Vanaf 1024 pixels breed)
-   ========================================== */
+/* =====================
+   PRODUCT DETAIL PAGINA
+   =====================*/
+main > section:only-of-type {
+    padding: 20px 20px 60px;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+main > section:only-of-type figure {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+main > section:only-of-type figure img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+main > section:only-of-type figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+main > section:only-of-type figcaption button {
+    background: none;
+    border: none;
+    color: var(--purple);
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+main > section:only-of-type h1 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: var(--purple);
+    margin-bottom: 6px;
+}
+
+main > section:only-of-type article > p:nth-of-type(1) {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #1A75BB;
+    margin-bottom: 18px;
+}
+
+main > section:only-of-type article > p:nth-of-type(2) {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main > section:only-of-type article > p:nth-of-type(2) strong {
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+main > section:only-of-type fieldset {
+    border: none;
+}
+
+main > section:only-of-type fieldset:first-of-type {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+main > section:only-of-type legend {
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+main > section:only-of-type fieldset:first-of-type button {
+    width: 105px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 0.95rem;
+}
+
+main > section:only-of-type fieldset:first-of-type button:first-of-type {
+    border: 1.5px solid #E2E2E2;
+    background-color: var(--white);
+    color: var(--purple);
+}
+
+main > section:only-of-type fieldset:first-of-type button:last-of-type {
+    border: 1.5px solid var(--purple);
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+main > section:only-of-type fieldset:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    padding: 10px 18px;
+    border: 2px solid #1A75BB;
+    border-radius: 12px;
+    margin-bottom: 22px;
+}
+
+main > section:only-of-type fieldset:last-of-type button {
+    background: none;
+    border: none;
+    color: #1A75BB;
+    font-size: 1.2rem;
+}
+
+main > section:only-of-type fieldset:last-of-type output {
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: #1A75BB;
+}
+
+main > section:only-of-type form > button {
+    width: 100%;
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 28px;
+}
+
+main > section:only-of-type article > p:last-of-type {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    font-weight: 700;
+}
+
+/* ========
+   DESKTOP
+   ========*/
 @media (min-width: 1024px) {
     /* 1. Header */
-    .site-header { padding: 20px 5%; }
-    
-    /* Verberg hamburger knop */
-    .site-header > button { display: none; } 
-    
-    /* Toon navigatie */
-    .site-header nav { display: flex; gap: 30px; }
-    .site-header nav a {
+    header { padding: 20px 5%; }
+    header > button { display: none; } 
+    header nav { display: flex; gap: 30px; }
+    header nav a {
         text-decoration: none;
         color: var(--purple);
         font-weight: 700;
         font-size: 0.95rem;
     }
-    
-    /* Toon account knop */
-    .site-header > div > button:first-of-type { display: block; }
+    header menu button:first-of-type { display: block; }
 
-    /* 3. Producten & 7. Merch (Alle slides naast elkaar) */
-    .product-section > div, 
-    .merch-section > div {
+    /* Sectie 2 (Producten), Sectie 5 (Reviews) & Sectie 6 (Merch) naast elkaar */
+    main > section:nth-of-type(2) figure, 
+    main > section:nth-of-type(6) figure {
         max-width: 1200px;
-        display: flex;
         gap: 15px;
         justify-content: center;
     }
+
+    main > section:nth-of-type(5) figure {
+        max-width: 1100px;
+        gap: 24px;
+        justify-content: center;
+    }
     
-    .product-section .slide, 
-    .merch-section .slide {
+    main > section:nth-of-type(2) article, 
+    main > section:nth-of-type(5) article,
+    main > section:nth-of-type(6) article {
         display: block !important;
         flex: 1;
+        margin: 0;
     }
 
-    /* Pijltjes verbergen */
-    .product-section button, 
-    .merch-section button {
+    /* Verberg slider-knoppen op desktop */
+    main > section:nth-of-type(2) button, 
+    main > section:nth-of-type(5) button,
+    main > section:nth-of-type(6) button {
         display: none;
     }
 
-    /* 5. Ryan Trahan (Foto links, tekst rechts) */
-    .dream-section {
+    /* Sectie 4: Ryan Trahan */
+    main > section:nth-of-type(4) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -484,90 +649,77 @@ h1, h2, h3, h4 {
         text-align: left;
         padding: 80px 24px;
     }
-    .dream-section .frame {
+    main > section:nth-of-type(4) figure {
         margin: 0;
         width: 320px;
         height: 380px;
     }
-    .dream-section > div:last-child { max-width: 450px; }
-    .dream-section > p { margin: 0 0 30px 0; }
+    main > section:nth-of-type(4) article { max-width: 450px; }
+    main > section:nth-of-type(4) p { margin: 0 0 30px 0; }
 
-    /* 6. Reviews */
-    .reviews-section > div {
-        max-width: 1100px;
-        gap: 24px;
-        justify-content: center;
-    }
-    
-    .reviews-section .slide {
-        display: block !important;
-        flex: 1;
-    }
-    
-    .reviews-section button {
-        display: none;
-    }
-
-    /* 8. Footer (In kolommen naast elkaar) */
-    /* 8. Footer Desktop (Achtergrond 100%, content gecentreerd) */
-    .site-footer {
-        /* Geen max-width meer hier, zodat de paarse kleur volledig naar de randen gaat */
+    /* Footer */
+    footer {
         text-align: left;
-        padding-bottom: 20px;
-        padding-top: 40px;
-        /* Een beetje padding aan de zijkanten voor als het scherm net iets kleiner is dan 1200px */
-        padding-left: 5%; 
-        padding-right: 5%;
+        padding: 40px 5% 20px;
     }
     
-    /* Het binnenste blok (waar de inhoud in zit) krijgt nu de max-width */
-    .site-footer > div:first-of-type {
+    footer > section {
         max-width: 1200px;
-        margin: 0 auto; /* Centreert de content */
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: start;
     }
 
-    .site-footer h3 {
+    footer h3 {
         grid-column: 1;
         grid-row: 1;
         margin-bottom: 20px;
     }
 
-    .site-footer form {
+    footer form {
         grid-column: 1;
         grid-row: 2;
         max-width: 450px;
     }
 
-    .site-footer ul {
+    footer ul {
         grid-column: 2;
         grid-row: 1 / span 2;
         justify-self: end;
         padding-right: 50px;
+        margin-bottom: 0;
     }
 
-    .site-footer form input {
+    footer form input {
         display: inline-block;
         width: 60%;
         margin-right: 10px;
         margin-bottom: 0;
     }
 
-    .site-footer form button {
+    footer form button {
         display: inline-block;
         width: 35%;
         margin: 0;
     }
 
-    /* Ook de onderste legal-balk krijgt de max-width zodat hij uitlijnt met de rest */
-    .site-footer .legal {
+    footer small {
         max-width: 1200px;
-        margin: 50px auto 0; /* Auto margin centreert het blok */
+        margin: 50px auto 0;
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
         border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* Product Detail Pagina op Desktop */
+    main > section:only-of-type {
+        max-width: 1050px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: start;
+        padding-top: 50px;
     }
 }

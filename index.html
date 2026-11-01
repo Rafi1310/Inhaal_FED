@@ -3,202 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JOYRIDE Uncommon Candy</title>
-    <!-- Google Fonts die de dikke ronde titels en schone bodytekst benaderen -->
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <title>JOYRIDE Sweets</title>
+	<!-- https://www.w3schools.com/html/html_favicon.asp -->
+	<link rel="icon" type="image/x-icon" href="/images/favicon_joyride.webp">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-    
-    <header class="site-header">
-        <!-- De hamburger knop (is de eerste button direct in de header) -->
+    <!-- 1. HEADER -->
+    <header>
+		<!-- Laten maken door gemini -->
         <button aria-label="Open menu">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
 
-        <!-- Desktop navigatie -->
         <nav>
-            <a href="#">new arrivals</a>
-            <a href="#">shop candy</a>
-            <a href="#">shop merch</a>
-            <a href="#">our story</a>
+            <a href="index.html">new arrivals</a>
+            <a href="index.html">shop candy</a>
+            <a href="index.html">shop merch</a>
+            <a href="index.html">our story</a>
         </nav>
 
-        <a href="#">
+        <a href="index.html">
             <img src="images/logo.webp" alt="JOYRIDE">
         </a>
 
-        <!-- Het blokje met de twee iconen rechts -->
-        <div>
-            <!-- Account icoon (is de eerste knop in deze div) -->
+        <menu>
             <button aria-label="Account">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
             </button>
-            <!-- Winkelmand icoon (is de tweede/laatste knop) -->
+			<!-- Laten maken door gemini -->
             <button aria-label="Shopping bag">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
             </button>
-        </div>
+        </menu>
     </header>
 
-    <!-- 2. HERO CAROUSEL -->
-    <section class="hero-carousel">
-        <div>
-            <div class="slide active">
-                <picture>
-                    <!-- Dit plaatje laadt hij alleen op desktop (minimaal 1024px breed) -->
+    <main>
+        <!-- SECTIE 1: HERO CAROUSEL -->
+        <section>
+            <figure>
+                <picture class="active">
                     <source media="(min-width: 1024px)" srcset="images/hero_groot.webp">
-                    <!-- Dit is het normale (mobiele) plaatje -->
                     <img src="images/Hero_img.webp" alt="Joyride Hero 1">
                 </picture>
-            </div>
-            
-            <div class="slide">
+                
                 <picture>
                     <source media="(min-width: 1024px)" srcset="images/herogroot_2.webp">
                     <img src="images/hero_img2.webp" alt="Joyride Hero 2">
                 </picture>
-            </div>
 
-            <button>❮</button>
-            <button>❯</button>
-        </div>
-    </section>
+                <button aria-label="Previous slide">❮</button>
+                <button aria-label="Next slide">❯</button>
+            </figure>
+        </section>
 
-    <!-- 3. PRODUCT CAROUSEL -->
-    <section class="product-section">
-        <h2>Shop the best candy<br>on earth</h2>
+        <!-- SECTIE 2: PRODUCT SLIDER -->
+        <section>
+            <h2>Shop the best candy on<br>earth</h2>
 
-        <div>
-            <button>❮</button>
+            <figure>
+                <button aria-label="Previous product">❮</button>
 
-            <div class="slide active">
-                <img src="images/CherryBerry.webp" alt="Cherry berry ropes">
-                <p>Cherry berry ropes<br>strips</p>
-            </div>
+                <article class="active">
+                    <a href="product.html">
+                        <img src="images/CherryBerry.webp" alt="Cherry berry ropes">
+                        <p>Cherry berry ropes</p>
+                    </a>
+                </article>
 
-            <div class="slide">
-                <img src="images/Watermelon.webp" alt="Sour watermelon wedges">
-                <p>Sour watermelon wedges<br>strips</p>
-            </div>
+                <article>
+                    <a href="product.html">
+                        <img src="images/Watermelon.webp" alt="Sour watermelon wedges">
+                        <p>Sour watermelon wedges</p>
+                    </a>
+                </article>
 
-            <div class="slide">
-                <img src="images/SourStrips.webp" alt="Sour blue raspberry strips">
-                <p>Sour blue raspberry strips<br>bears</p>
-            </div>
+                <article>
+                    <a href="product.html">
+                        <img src="images/SourStrips.webp" alt="Sour blue raspberry strips">
+                        <p>Sour blue raspberry strips</p>
+                    </a>
+                </article>
 
-            <button>❯</button>
-        </div>
-    </section>
+                <button aria-label="Next product">❯</button>
+            </figure>
+        </section>
 
-    <!-- 4. LIME GREEN STORE BANNER -->
-    <section class="store-banner">
-        <div>
-            <span>HyVee</span>
-            <span class="acme">ACME</span>
-        </div>
-        <a href="#" class="btn-purple">FIND US IN STORE</a>
-    </section>
+        <!-- SECTIE 3:BANNER-->
+        <section>
+            <ul>
+                <li>TARGET</li>
+                <li><em>ACME</em></li>
+                <li>SAFEWAY</li>
+            </ul>
+            <a href="#">FIND US IN STORE</a>
+        </section>
 
-    <!-- 5. RYAN TRAHAN SECTION -->
-    <section class="dream-section">
-        <div class="frame">
-            <img src="images/ryan.webp" alt="Ryan Trahan holding candy">
-        </div>
+        <!-- SECTIE 4: RYAN TRAHAN-->
+        <section>
+            <figure>
+                <img src="images/ryan.webp" alt="Ryan Trahan holding candy">
+            </figure>
+            <article>
+                <h2>My crazy dream</h2>
+                <p>I've always had a sweet tooth and a love for candy, but have you seen the candy aisle recently? Most of the big candy brands are filled with fake junk, artificial ingredients, way too much sugar. It's time something changed. At JOYRIDE, we're making delicious candy without all the junk. We're changing the way the world eats candy.</p>
+                <a href="#">LEARN MORE</a>
+            </article>
+        </section>
 
-        <h2>My crazy dream</h2>
-        <p>
-            howdy! ryan trahan here. y'all know i love candy, but have you ever looked at what it's really made of? all the top brands are filled with fake dyes, artificial flavors and way too much sugar. it's time something changed. at JOYRIDE, we dream up delicious candy without all the junk. let's change the way the world eats candy.
-        </p>
-
-        <a href="#" class="btn-purple">LEARN MORE</a>
-    </section>
-
-    <!-- 6. MAGENTA REVIEWS SECTION -->
-    <div class="wave-top">
-        <svg viewBox="0 0 500 50" preserveAspectRatio="none"><path d="M0,50 L0,25 Q60,0 125,25 T250,25 T375,25 T500,25 L500,50 Z" fill="#D63884"></path></svg>
-    </div>
-
-    <section class="reviews-section">
-        <h2>Don't just take our word<br>for it</h2>
-
-        <div>
-            <!-- Vorige knop -->
-            <button>❮</button>
-
-            <!-- Review 1 (active = standaard zichtbaar) -->
-            <div class="slide active">
-                <span>★★★★★</span>
-                <h3>Try them</h3>
-                <p>Have you tried them they are great if not TRY THEM</p>
-                <strong>@jadethefennecfox</strong>
-            </div>
-
-            <!-- Review 2 -->
-            <div class="slide">
-                <span>★★★★★</span>
-                <h3>Roadtrip must have</h3>
-                <p>🍭ROAD TRIP HAPPY SUGAR ATTACK SNACK !!!</p>
-                <strong>@realdealdenise</strong>
-            </div>
-
-            <!-- Review 3 -->
-            <div class="slide">
-                <span>★★★★★</span>
-                <h3>My favorite candy</h3>
-                <p>Perfect texture and they're actually sour unlike other healthier sour candies. Way to go Ryan and the rest of the Joyride team!</p>
-                <strong>Shane H.</strong>
-            </div>
-
-            <!-- Volgende knop -->
-            <button>❯</button>
-        </div>
-    </section>
-
-    <div class="wave-bottom">
-        <svg viewBox="0 0 500 50" preserveAspectRatio="none"><path d="M0,0 L500,0 L500,25 Q440,50 375,25 T250,25 T125,25 T0,25 Z" fill="#D63884"></path></svg>
-    </div>
-
-    <!-- 7. MERCH SECTION -->
-    <section class="merch-section">
-        <h2>Grab some JOYRIDE<br>merch</h2>
-
-        <div>
-            <button>❮</button>
-
-            <!-- Slide 1 (active = standaard zichtbaar) -->
-            <div class="slide active">
-                <img src="images/Trui.webp" alt="Joyride Hoodie">
-                <p>hoodies</p>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="slide">
-                <img src="images/shirt.webp" alt="Joyride Tee">
-                <p>tees</p>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="slide">
-                <img src="images/pet.webp" alt="Joyride Hat">
-                <p>hats</p>
-            </div>
-
-            <button>❯</button>
-        </div>
-    </section>
-
-    <!-- 8. FOOTER -->
-    <div class="footer-waves">
-        <svg viewBox="0 0 500 70" preserveAspectRatio="none">
-            <path d="M0,70 L0,25 Q80,0 165,25 T330,25 T500,20 L500,70 Z" fill="#FFA800"></path>
-            <path d="M0,70 L0,50 Q125,30 250,50 T500,45 L500,70 Z" fill="#3B0B59"></path>
+        <!-- SECTIE 5: REVIEWS-->
+        <svg viewBox="0 0 500 50" preserveAspectRatio="none">
+            <path d="M0,50 L0,25 Q60,0 125,25 T250,25 T375,25 T500,25 L500,50 Z" fill="#D63884"></path>
         </svg>
-    </div>
 
-    <footer class="site-footer">
-        <div>
+        <section>
+            <h2>Don't just take our word<br>for it</h2>
+
+            <figure>
+                <button aria-label="Previous review">❮</button>
+
+                <article class="active">
+                    <p>★★★★★</p>
+                    <h3>Try them</h3>
+                    <p>Have you tried them they are great if not TRY THEM</p>
+                    <strong>@jadethefennecfox</strong>
+                </article>
+
+                <article>
+                    <p>★★★★★</p>
+                    <h3>Roadtrip must have</h3>
+                    <p>🍭ROAD TRIP HAPPY SUGAR ATTACK SNACK !!!</p>
+                    <strong>@realdealdenise</strong>
+                </article>
+
+                <article>
+                    <p>★★★★★</p>
+                    <h3>My favorite candy</h3>
+                    <p>Perfect texture and they're actually sour unlike other healthier sour candies. Way to go Ryan and the rest of the Joyride team!</p>
+                    <strong>Shane H.</strong>
+                </article>
+
+                <button aria-label="Next review">❯</button>
+            </figure>
+        </section>
+
+        <svg viewBox="0 0 500 50" preserveAspectRatio="none">
+            <path d="M0,0 L0,25 Q60,50 125,25 T250,25 T375,25 T500,25 L500,0 Z" fill="#D63884"></path>
+        </svg>
+
+        <!-- SECTIE 6: MERCH-->
+        <section>
+            <h2>Grab some JOYRIDE<br>merch</h2>
+
+            <figure>
+                <button aria-label="Previous merch">❮</button>
+
+                <article class="active">
+                    <img src="images/Trui.webp" alt="Joyride Hoodie">
+                    <p>hoodies</p>
+                </article>
+
+                <article>
+                    <img src="images/shirt.webp" alt="Joyride Tee">
+                    <p>tees</p>
+                </article>
+
+                <article>
+                    <img src="images/pet.webp" alt="Joyride Hat">
+                    <p>hats</p>
+                </article>
+
+                <button aria-label="Next merch">❯</button>
+            </figure>
+        </section>
+    </main>
+
+    <!-- 7. FOOTER-->
+	 <!-- Svg laten maken door gemini -->
+    <svg viewBox="0 0 500 70" preserveAspectRatio="none">
+        <path d="M0,70 L0,25 Q80,0 165,25 T330,25 T500,20 L500,70 Z" fill="#FFA800"></path>
+        <path d="M0,70 L0,50 Q125,30 250,50 T500,45 L500,70 Z" fill="#3B0B59"></path>
+    </svg>
+
+    <footer>
+        <section>
             <h3>JOYRIDE</h3>
             <ul>
                 <li><a href="#">our story</a></li>
@@ -213,12 +202,12 @@
                 <input type="email" placeholder="Email">
                 <button type="button">SIGN ME UP</button>
             </form>
-        </div>
+        </section>
 
-        <div class="legal">
+        <small>
             <p>© 2026, JOYRIDE</p>
             <p>Refund policy · Privacy policy · Terms of service · Shipping policy</p>
-        </div>
+        </small>
     </footer>
 
     <script src="scripts/script.js"></script>
