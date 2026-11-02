@@ -41,6 +41,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   De homepagina 
+  
   <img width="750" height="10612" alt="www joyridesweets com_(iPhone SE) (1)" src="https://github.com/user-attachments/assets/111345c4-1032-4abb-878c-ad53da87475f" />
 
 
@@ -48,45 +49,33 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   De product pagina
+  
   <img width="750" height="11216" alt="www joyridesweets com_products_cherry-berry-ropes(iPhone SE) (1)" src="https://github.com/user-attachments/assets/aae02a22-112a-4034-ab0f-4ef61fe4bf62" />
  
   
  
 </details>
 
-
-
-## Toegankelijkheidstest 1/2 (week 1)
+## Toegankelijkheidstest
 
 <details>
-  <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  <summary>De website was best toegankelijk<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
-</details>
+  <img width="3024" height="4032" alt="IMG_0182" src="https://github.com/user-attachments/assets/53060534-42c5-410e-8a01-d68854525a0c" />
 
+  <img width="4284" height="5712" alt="IMG_0183" src="https://github.com/user-attachments/assets/53d78baa-ba99-43ae-a0d1-978131a21128" />
 
+  <img width="3024" height="4032" alt="IMG_0184" src="https://github.com/user-attachments/assets/eb35e06e-0cd8-471b-b2e7-7c4b1558dbac" />
 
-## Breakdownschets (week 1)
+  <img width="4284" height="5712" alt="IMG_0185" src="https://github.com/user-attachments/assets/45595a6e-81c5-42eb-8e17-5be9dfb21fcb" />
 
-<details>
-  <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
+  <img width="3024" height="4032" alt="IMG_0186" src="https://github.com/user-attachments/assets/bee077d3-abf7-4e6f-9eae-aa90652e0262" />
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
-
-
-
-
 
 ## Voortgang 1 (week 2)
 
@@ -116,10 +105,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - ...
 
 </details>
-
-
-
-
 
 ## Voortgang 2 (week 3)
 
@@ -151,57 +136,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
-
-
-## Toegankelijkheidstest 2/2 (week 4)
-
-<details>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
-
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
-</details>
-
-
-
-
-
-## Voortgang 3 (week 4)
-
-<details>
-  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
-
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
-</details>
-
-
-
-
-
-## Eindgesprek (week 5)
+## Eindgesprek (week 4)
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
