@@ -115,6 +115,17 @@ In de eerste week ben ik begonnen met het namaken van de JOYRIDE snoepwebsite vo
   In de derde week heb ik de tweede pagina gemaakt en al mijn code flink opgeschoond.
 - De productpagina: Als je op de homepage op de Cherry Berry Ropes klikt, ga je nu naar een nieuwe pagina.
 
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/070b9d37-684c-4ab0-9608-15210e322d80" />
+
+- Automatisch bewegende woorden: Bij de 'find my store' sectie rouleren de winkels nu automatisch. De woorden gaan nu de hele tijd van rechts naar links.
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/f8fc4a89-230a-4378-a19e-2b551283eb88" />
+
+- Toegankelijkheid: Voor mensen met een screenreader is het belangrijk dat ze de website door kunnen, maar ook zijn sommige dingen overbodig. Daarom heb ik een 'skip to content' knop toegevoegd. Deze zie je niet totdat je op tab drukt, dan komt die tevoorschijn.
+
+  <img width="215" height="89" alt="image" src="https://github.com/user-attachments/assets/c134176f-b272-4b42-9e82-a1ea6438f875" />
+
+
 </details>
 
 ## Eindgesprek (week 4)
