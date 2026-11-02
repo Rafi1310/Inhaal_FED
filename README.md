@@ -64,15 +64,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
-  <img width="3024" height="4032" alt="IMG_0182" src="https://github.com/user-attachments/assets/53060534-42c5-410e-8a01-d68854525a0c" />
+  <img width="800" alt="IMG_0182" src="https://github.com/user-attachments/assets/53060534-42c5-410e-8a01-d68854525a0c" />
 
-  <img width="4284" height="5712" alt="IMG_0183" src="https://github.com/user-attachments/assets/53d78baa-ba99-43ae-a0d1-978131a21128" />
+  <img width="800" alt="IMG_0183" src="https://github.com/user-attachments/assets/53d78baa-ba99-43ae-a0d1-978131a21128" />
 
-  <img width="3024" height="4032" alt="IMG_0184" src="https://github.com/user-attachments/assets/eb35e06e-0cd8-471b-b2e7-7c4b1558dbac" />
+  <img width="800" alt="IMG_0184" src="https://github.com/user-attachments/assets/eb35e06e-0cd8-471b-b2e7-7c4b1558dbac" />
 
-  <img width="4284" height="5712" alt="IMG_0185" src="https://github.com/user-attachments/assets/45595a6e-81c5-42eb-8e17-5be9dfb21fcb" />
+  <img width="800" alt="IMG_0185" src="https://github.com/user-attachments/assets/45595a6e-81c5-42eb-8e17-5be9dfb21fcb" />
 
-  <img width="3024" height="4032" alt="IMG_0186" src="https://github.com/user-attachments/assets/bee077d3-abf7-4e6f-9eae-aa90652e0262" />
+  <img width="800" alt="IMG_0186" src="https://github.com/user-attachments/assets/bee077d3-abf7-4e6f-9eae-aa90652e0262" />
 
 
 </details>
@@ -81,7 +81,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 1 
 
-<details>
+<details open>
   <summary>uitwerken voor <sup>e</sup> voortgang</summary>
 
 
@@ -102,7 +102,7 @@ In de eerste week ben ik begonnen met het namaken van de JOYRIDE snoepwebsite vo
 
 ## Voortgang 2
 
-<details>
+<details open>
   <summary>uitwerken voor <sup>e</sup> voortgang</summary>
 
   ### Week 2
@@ -120,7 +120,7 @@ In de eerste week ben ik begonnen met het namaken van de JOYRIDE snoepwebsite vo
 
 ## Voortgang 3
 
-<details>
+<details open>
   <summary>uitwerken voor <sup>e</sup> voortgang</summary>
 
   ### Week 3
@@ -142,7 +142,7 @@ In de eerste week ben ik begonnen met het namaken van de JOYRIDE snoepwebsite vo
 
 ## Eindgesprek (week 4)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
