@@ -239,20 +239,38 @@ main > section:nth-of-type(6) p {
    ========================================== */
 main > section:nth-of-type(3) {
     background-color: var(--lime-green);
-    padding: 26px 16px 32px;
+    padding: 26px 0 32px;
+    overflow: hidden; 
 }
 
 main > section:nth-of-type(3) ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 28px;
+    gap: 50px; 
+    padding-right: 50px; 
+    width: max-content; 
     color: var(--white);
     font-family: 'Fredoka', sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 800;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
+    
+    animation: winkel-slider 12s linear infinite;
+}
+
+main > section:nth-of-type(3) li {
+    white-space: nowrap; 
+}
+
+/* De beweging van rechts naar links*/
+@keyframes winkel-slider {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /* =====================
@@ -637,6 +655,11 @@ main > section:only-of-type article > p:last-of-type {
     main > section:nth-of-type(6) button {
         display: none;
     }
+
+	/* Sectie 3: Banner */
+	main > section:nth-of-type(3) ul {
+		font-size: 5rem;
+	}
 
     /* Sectie 4: Ryan Trahan */
     main > section:nth-of-type(4) {
