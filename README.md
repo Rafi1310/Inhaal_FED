@@ -77,64 +77,45 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 </details>
 
-## Voortgang 1 (week 2)
+## Herkansing
+
+## Voortgang 1 
 
 <details>
-  <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
-
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <summary>uitwerken voor <sup>e</sup> voortgang</summary>
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  ### Week 1
+In de eerste week ben ik begonnen met het namaken van de JOYRIDE snoepwebsite voor een telefoonscherm.
+- Kleuren opslaan: De felle, speelse kleuren van de originele site zijn geanalyseerd en vastgelegd in CSS custom properties, dit zorgt voor overzichtelijke en herbruikbare code.
+- Lettertypes op mijn eigen computer zetten: Ik heb de lettertypes gedownload en in een fonts mapje gezet. Ik heb deze moeten downloaden omdat je niet google fonts zo mag inladen, dat gaat tegen een europese wet in. Ik heb Variable Fonts gebruikt: dat is één slim bestandje waarin alle diktes van de letters al zitten. Dat scheelt weer veel losse bestandjes!
+- De voorkant bouwen: Ik heb alle blokken van de homepage onder elkaar gebouwd: het menu bovenin met het winkelmandje, het grote plaatje bovenaan, de snoepzakjes, de groene balk met winkels, het stukje over oprichter Ryan Trahan, de roze balk met reviews, de merch en helemaal onderaan de paarse footer.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  
+</details>
 
+## Voortgang 2
 
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+<details>
+  <summary>uitwerken voor <sup>e</sup> voortgang</summary>
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  ### Week 2
+  In de tweede week heb ik ervoor gezorgd dat je echt door de plaatjes kunt klikken én dat de website er op een groot computerscherm ook goed uitziet.
+- Werkende pijltjes met JavaScript: Op een telefoon passen niet alle snoepzakjes en reviews naast elkaar, dus staan ze in een slider met pijltjes
+- Van klein naar groot scherm met @media: Met een @media regel in CSS heb ik ingesteld wat er gebeurt als je scherm groter is dan 1024 pixels
 
 </details>
 
-## Voortgang 2 (week 3)
+## Voortgang 3
 
 <details>
-  <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
+  <summary>uitwerken voor <sup>e</sup> voortgang</summary>
 
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  ### Week 3
+  In de derde week heb ik de tweede pagina gemaakt en al mijn code flink opgeschoond.
+- De productpagina: Als je op de homepage op de Cherry Berry Ropes klikt, ga je nu naar een nieuwe pagina.
 
 </details>
-
 
 ## Eindgesprek (week 4)
 
@@ -142,37 +123,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik ben vind het goed hoe de website eruit ziet, je ziet zowat geen verschil. De responsivenes is erg goed. 
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Onderaan de pagina van de originele website heb je soort van sterretjes die sparklen. Dit leek mij erg leuk om na te maken alleen is dat mij helaas niet gelukt. Ik heb geen idee hoe dat zou moeten
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 ## Herkansing
 
-### Week 1
-In de eerste week ben ik begonnen met het namaken van de JOYRIDE snoepwebsite voor een telefoonscherm.
-- Kleuren opslaan: De felle, speelse kleuren van de originele site zijn geanalyseerd en vastgelegd in CSS custom properties, dit zorgt voor overzichtelijke en herbruikbare code.
-- Lettertypes op mijn eigen computer zetten: Ik heb de lettertypes gedownload en in een fonts mapje gezet. Ik heb deze moeten downloaden omdat je niet google fonts zo mag inladen, dat gaat tegen een europese wet in. Ik heb Variable Fonts gebruikt: dat is één slim bestandje waarin alle diktes van de letters al zitten. Dat scheelt weer veel losse bestandjes!
-- De voorkant bouwen: Ik heb alle blokken van de homepage onder elkaar gebouwd: het menu bovenin met het winkelmandje, het grote plaatje bovenaan, de snoepzakjes, de groene balk met winkels, het stukje over oprichter Ryan Trahan, de roze balk met reviews, de merch en helemaal onderaan de paarse footer.
 
-### Week 2
-In de tweede week heb ik ervoor gezorgd dat je echt door de plaatjes kunt klikken én dat de website er op een groot computerscherm ook goed uitziet.
-- Werkende pijltjes met JavaScript: Op een telefoon passen niet alle snoepzakjes en reviews naast elkaar, dus staan ze in een slider met pijltjes
-- Van klein naar groot scherm met @media: Met een @media regel in CSS heb ik ingesteld wat er gebeurt als je scherm groter is dan 1024 pixels
 
-### Week 3
-In de derde week heb ik de tweede pagina gemaakt en al mijn code flink opgeschoond.
-- De productpagina: Als je op de homepage op de Cherry Berry Ropes klikt, ga je nu naar een nieuwe pagina.
+
+
+
 
 ## Bronnenlijst
 
