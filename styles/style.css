@@ -75,6 +75,31 @@ main > section:nth-of-type(4) a {
     text-transform: uppercase;
 }
 
+body > a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; 
+    background-color: rgba(104, 18, 137, 0.92); 
+    color: var(--white);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    padding: 16px 28px;
+    border-radius: 14px;
+    border: 2.5px solid var(--white);
+    
+    transform: translateY(-200%);
+    
+}
+
+body > a:focus {
+    transform: translateY(0);
+}
+
+
 /* ==========
    1. HEADER
    ========== */
