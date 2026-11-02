@@ -88,7 +88,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Week 1
 In de eerste week ben ik begonnen met het namaken van de JOYRIDE snoepwebsite voor een telefoonscherm.
 - Kleuren opslaan: De felle, speelse kleuren van de originele site zijn geanalyseerd en vastgelegd in CSS custom properties, dit zorgt voor overzichtelijke en herbruikbare code.
+
+  <img width="300" alt="image" src="https://github.com/user-attachments/assets/991c784c-3d01-46cd-ad74-e466488a0629" />
+
 - Lettertypes op mijn eigen computer zetten: Ik heb de lettertypes gedownload en in een fonts mapje gezet. Ik heb deze moeten downloaden omdat je niet google fonts zo mag inladen, dat gaat tegen een europese wet in. Ik heb Variable Fonts gebruikt: dat is één slim bestandje waarin alle diktes van de letters al zitten. Dat scheelt weer veel losse bestandjes!
+
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/5526756d-653b-463e-bf28-16fb5682c2dc" />
+
 - De voorkant bouwen: Ik heb alle blokken van de homepage onder elkaar gebouwd: het menu bovenin met het winkelmandje, het grote plaatje bovenaan, de snoepzakjes, de groene balk met winkels, het stukje over oprichter Ryan Trahan, de roze balk met reviews, de merch en helemaal onderaan de paarse footer.
 
   
@@ -102,7 +108,13 @@ In de eerste week ben ik begonnen met het namaken van de JOYRIDE snoepwebsite vo
   ### Week 2
   In de tweede week heb ik ervoor gezorgd dat je echt door de plaatjes kunt klikken én dat de website er op een groot computerscherm ook goed uitziet.
 - Werkende pijltjes met JavaScript: Op een telefoon passen niet alle snoepzakjes en reviews naast elkaar, dus staan ze in een slider met pijltjes
+
+  <img width="100" alt="image" src="https://github.com/user-attachments/assets/97334cc1-177c-4557-bbb1-c3870a30b477" />
+
 - Van klein naar groot scherm met @media: Met een @media regel in CSS heb ik ingesteld wat er gebeurt als je scherm groter is dan 1024 pixels
+
+  <img width="300" alt="image" src="https://github.com/user-attachments/assets/a59e2fe0-db17-4a30-8fb2-8fd4266bdfab" />
+
 
 </details>
 
@@ -134,22 +146,28 @@ In de eerste week ben ik begonnen met het namaken van de JOYRIDE snoepwebsite vo
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
+
+  <img width="400" alt="image" src="https://github.com/user-attachments/assets/edc78d89-8656-4bfe-aa5f-4fdf7418fb45" />
+
   
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/2a4960eb-5633-41d6-83b9-cf528d980351" />
+
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/64e32964-b64b-4d87-83a3-ddb641c4409d" />
+
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/0de6dbd2-3912-4df4-96cc-faeb781533dc" />
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Ik ben vind het goed hoe de website eruit ziet, je ziet zowat geen verschil. De responsivenes is erg goed. 
+  Ik ben vind het goed hoe de website eruit ziet, je ziet zowat geen verschil. De responsivenes is erg goed. Ook denk ik na over hoe mensen die blind zijn door de website heen gaan. Ik heb hier op gelet en daarvoor de juiste dingen gedaan. Bijvoorbeeld een skip link en de aria labels voor de screenreaders. Ook natuurlijk de favicon is aangepast.
 
 
   ### Dit was lastig/Is niet gelukt:
   Onderaan de pagina van de originele website heb je soort van sterretjes die sparklen. Dit leek mij erg leuk om na te maken alleen is dat mij helaas niet gelukt. Ik heb geen idee hoe dat zou moeten
 
 </details>
-
-## Herkansing
-
-
-
 
 
 
